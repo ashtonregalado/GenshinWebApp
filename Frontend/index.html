@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <!-- HTML Structure -->
+    <input type="text" id="searchInput" placeholder="Enter character name" />
+    <button id="searchButton">Search</button>
+    <div id="result"></div>
+
+    <form id="addCharacterForm">
+      <input type="text" id="charInput" placeholder="Add Character" required />
+      <input type="text" id="regionInput" placeholder="Add Region" required />
+      <input type="text" id="visionInput" placeholder="Add Vision" required />
+      <input type="text" id="weaponInput" placeholder="Add Weapon" required />
+      <button type="submit" id="addButton">Add Character</button>
+    </form>
+
+    <input type="text" id="delete" placeholder="Enter Character to Delete" />
+    <button id="deleteButton">Delete Character</button>
+
+    <h1>Genshin Characters</h1>
+    <div id="characterList"></div>
+    <script type="module" src="/src/home_content.ts"></script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
